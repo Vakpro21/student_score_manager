@@ -1,0 +1,62 @@
+<!--
+  File: index.html
+  Description: App general interface
+  Author: Khoa Vo
+  Created on: 2025-06-23
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Score Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Student Score Manager</h1>
+    <p>Add students, scores, and calculate average.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <form id="student-form" class="student-form">
+      <input type="text" id="name" placeholder="Full Name" class="input-field" />
+      <input type="text" id="student-id" placeholder="Student ID" class="input-field" />
+      <input type="text" id="subject" placeholder="Subject" class="input-field" />
+      <input type="number" id="score" placeholder="Score (0 - 10)" class="input-field" />
+      <button type="submit" id="add-btn" class="add-btn">Add Student</button>
+    </form>
+
+    <p id="error-msg" class="error-msg"></p>
+
+    <table class="student-table" id="student-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Subject</th>
+          <th>Score</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Rows will be inserted here -->
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <p>Total students: <span id="student-count">0</span></p>
+      <p>Average score: <span id="average-score">0</span></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Created by Khoa Vo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/*
+  File: style.css
+  Description: App general CSS rules
+  Author: Khoa Vo
+  Created on: 2025-06-23
+*/
+/* ==== Reset & Layout ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+/* ==== Header ==== */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* ==== Main Content ==== */
+.main {
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ==== Form ==== */
+.student-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  flex: 1 1 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-btn {
+  flex: 1 1 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.error-msg {
+  color: red;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.error-msg.show {
+  display: block;
+}
+
+/* ==== Table ==== */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.student-table th, .student-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+}
+
+.student-table .delete-btn {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ==== Summary ==== */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* ==== Footer ==== */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
